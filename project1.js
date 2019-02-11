@@ -66,7 +66,7 @@ function leadPlayer() {
 
 //who won and stop the game
 function stopGame() {
-    if (counter1 === 5){
+    if (counter1 === 15){
         $("#inLead").text("Winner Player 1");
         $("#player2").attr("disabled","");
         $("#player1").attr("disabled","");
@@ -78,7 +78,7 @@ function stopGame() {
         $("#mouseplay").removeClass("selected");
         $("#keyboardplay").removeClass("selected");
     }
-    else if (counter2 === 5){
+    else if (counter2 === 15){
         $("#inLead").text("Winner Player 2");
         $("#player2").attr("disabled","");
         $("#player1").attr("disabled","");

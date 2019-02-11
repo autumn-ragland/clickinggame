@@ -1,0 +1,93 @@
+/*grid display*/
+.container{
+    display: grid;
+    grid-template-areas:
+            "title title title"
+            "section1 section2 section3"
+            "footer1 footer2 footer3"
+            "credit credit credit";
+    grid-template-columns: 1fr 1fr 1fr;
+    /*border: 1px solid gray;*/
+    padding: 5px;
+    margin: 5px;
+}
+/*title/header*/
+#title{
+    grid-area: title;
+    text-align: center;
+    padding: 5px;
+}
+/*counter and who is in the lead*/
+#leftsection{
+    grid-area: section1;
+    border: 1px solid gray;
+    text-align: center;
+    padding: 5px;
+}
+#midsection{
+    grid-area: section2;
+    text-align: center;
+    padding: 5px;
+}
+#rightsection{
+    grid-area: section3;
+    border: 1px solid gray;
+    text-align: center;
+    padding: 5px;
+}
+/*options*/
+#leftfooter{
+    grid-area: footer1;
+    text-align: right;
+    padding: 5px;
+}
+#midfooter{
+    grid-area: footer2;
+    text-align: left;
+    padding: 5px;
+}
+#rightfooter{
+    grid-area: footer3;
+    text-align: left;
+    padding: 5px;
+}
+/*footer*/
+#credit{
+    grid-area: credit;
+    text-align: center;
+}
+/*change background buttons*/
+.redBack{
+    background: red;
+}
+.blueBack{
+    background: blue;
+}
+.yellowBack{
+    background: yellow;
+}
+/*counter font size*/
+#player1count{
+    font-size: 60px;
+}
+#player2count{
+    font-size: 60px;
+}
+/*button size*/
+#player1{
+    width: 200px;
+    height:50px;
+}
+#player2{
+    width: 200px;
+    height:50px;
+}
+/*in the lead font style*/
+#inLead{
+    font-weight: bold;
+    font-size: 20px;
+}
+/*selected button*/
+.selected{
+    border: 2px solid black;
+}
